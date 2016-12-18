@@ -19,6 +19,8 @@ $form.submit(function (event) {
     return false;
 });
 
+
+
 function stripeResponseHandler(status, response) {
     if (response.error) { // Problem!
 
