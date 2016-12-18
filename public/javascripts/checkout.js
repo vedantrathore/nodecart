@@ -8,18 +8,16 @@ var $form = $('#checkout-form');
 
 $form.submit(function (event) {
     $('#charge-error').addClass('hidden');
-    $form.find('button').prop('disabled',true);
+    $form.find('button').prop('disabled', true);
     Stripe.card.createToken({
         number: $('#card-number').val(),
         cvc: $('#card-cvc').val(),
         exp_month: $('#card-expiry-month').val(),
         exp_year: $('#card-expiry-year').val(),
-        name : $('#name').val()
+        name: $('#card-name').val()
     }, stripeResponseHandler);
     return false;
 });
-
-
 
 function stripeResponseHandler(status, response) {
     if (response.error) { // Problem!
