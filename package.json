@@ -1,5 +1,5 @@
 {
-  "name": "shopping-cart",
+  "name": "FlipKlone",
   "version": "0.0.0",
   "private": true,
   "scripts": {
@@ -23,7 +23,12 @@
     "morgan": "~1.7.0",
     "passport": "^0.3.2",
     "passport-local": "^1.0.0",
+    "pm2": "^2.2.2",
     "serve-favicon": "~2.3.0",
     "stripe": "^4.14.0"
+  },
+  "engines": {
+    "node": "0.8.11",
+    "npm": "1.1.49"
   }
 }
